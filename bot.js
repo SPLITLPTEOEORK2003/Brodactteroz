@@ -7,7 +7,8 @@ client.on('ready', () => {
 
 
 
-client.login('NTEyNzQ5NTQ4MjU5NzcwMzcw.Ds-CIg.oJouMLa0-O3EiUYz545FVGogWJk');
+
+client.login(process.env.TOKEN3);
 
 
 
@@ -15,7 +16,7 @@ client.login('NTEyNzQ5NTQ4MjU5NzcwMzcw.Ds-CIg.oJouMLa0-O3EiUYz545FVGogWJk');
 
 
 client.on('message', message => {
-    var prefix = "$";
+    var prefix = "V";
     
         if (message.author.id === client.user.id) return;
         if (message.guild) {
@@ -44,7 +45,8 @@ client.on('message', message => {
 	
 	
 	
-client.login('NTEyNzQ5NTQ4MjU5NzcwMzcw.Ds-CIg.oJouMLa0-O3EiUYz545FVGogWJk');
+
+client.login(process.env.TOKEN3);
 
 
 
@@ -58,16 +60,17 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers `);
     console.log(`---------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setGame(`اصبر فالصبر من الايمان`,"http://twitch.tv/y04zgamer")
+  client.user.setGame(`Te Roz`,"http://twitch.tv/y04zgamer")
    client.user.setStatus("dnd")
 });
 
-client.login('NTEyNzQ5NTQ4MjU5NzcwMzcw.Ds-CIg.oJouMLa0-O3EiUYz545FVGogWJk');
+
+client.login(process.env.TOKEN3);
 
 
 client.on('message', message => {
     let args = message.content.split(' ').slice(1).join(' ');
-    if (message.content.startsWith('$bc-bot')){ // البريفكس والامر
+    if (message.content.startsWith('Vbc-bot')){ // البريفكس والامر
     if(!message.author.id === '') return;
     message.channel.sendMessage('جار ارسال الرسالة :white_check_mark:')
     client.users.forEach(m =>{
@@ -76,4 +79,5 @@ client.on('message', message => {
     }
     });
 
-client.login('NTEyNzQ5NTQ4MjU5NzcwMzcw.Ds-CIg.oJouMLa0-O3EiUYz545FVGogWJk');
+
+client.login(process.env.TOKEN3);
