@@ -16,7 +16,7 @@ client.login(process.env.TOKEN3);
 
 
 client.on('message', message => {
-    var prefix = "V";
+    var prefix = ".";
     
         if (message.author.id === client.user.id) return;
         if (message.guild) {
@@ -70,7 +70,7 @@ client.login(process.env.TOKEN3);
 
 client.on('message', message => {
     let args = message.content.split(' ').slice(1).join(' ');
-    if (message.content.startsWith('Vbc-bot')){ // البريفكس والامر
+    if (message.content.startsWith('.bc-bot')){ // البريفكس والامر
     if(!message.author.id === '') return;
     message.channel.sendMessage('جار ارسال الرسالة :white_check_mark:')
     client.users.forEach(m =>{
